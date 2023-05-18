@@ -30,6 +30,7 @@ type ViewModel = {
   imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <h2>Solution with Rxjs & Async Pipe 🙌</h2>
     <ng-container *ngIf="vm$ | async as vm">
       Showing {{ vm.itemFrom }} to {{ vm.itemTo }} of {{ vm.total }} entries
       <button (click)="goToStart()" [disabled]="vm.previousDisabled">
